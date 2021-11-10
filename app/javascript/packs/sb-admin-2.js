@@ -1,6 +1,5 @@
-(function($) {
+document.addEventListener("turbolinks:load", () => {
   "use strict"; // Start of use strict
-
   // Toggle the side navigation
   $("#sidebarToggle, #sidebarToggleTop").on('click', function(e) {
     $("body").toggleClass("sidebar-toggled");
@@ -53,4 +52,4 @@
     e.preventDefault();
   });
 
-})(jQuery); // End of use strict
+});
