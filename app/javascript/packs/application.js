@@ -19,7 +19,7 @@ import "bootstrap"
 import "@fortawesome/fontawesome-free/css/all"
 import Chart from 'chart.js'
 import 'datatables.net'
-import 'datatables.net-bs5'
+import 'datatables.net-bs4'
 import "./sb-admin-2"
 
 

@@ -10,7 +10,7 @@
     "bootstrap": "^4.6.0",
     "chart.js": "^2.9.4",
     "datatables.net": "^1.11.3",
-    "datatables.net-bs5": "^1.11.3",
+    "datatables.net-bs4": "^1.11.3",
     "expose-loader": "^1.0.0",
     "jquery": "3.6.0",
     "jquery-easing": "^0.0.1",
