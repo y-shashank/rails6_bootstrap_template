@@ -1,6 +1,8 @@
 class KittiesController < ApplicationController
   before_action :set_kitty, only: %i[ show edit update destroy ]
 
+  layout 'application'
+  
   # GET /kitties or /kitties.json
   def index
     @kitties = Kitty.all
