@@ -128,17 +128,17 @@
             </div>
             <!-- Nav Item - Tables -->
             <li class="nav-item">
-                <a class="nav-link" href="/login">
+                <a class="nav-link" href="<%= new_session_path(current_user) %>">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Login</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/register">
+                <a class="nav-link" href="<%= new_registration_path(current_user) %>">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Register</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/forgot-password">
+                <a class="nav-link" href="<%= new_password_path(current_user) %>">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Forgot Password</span></a>
             </li>

@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
+  devise_for :users, controllers: {
+    sessions: 'users/sessions',
+    passwords: 'users/passwords',
+    registrations: 'users/registrations'
+  }
   root "application#dashboard"
-  get '/login', to: 'login_logout#login'
-  get '/register', to: 'login_logout#register'
-  get '/forgot-password', to: 'login_logout#forgot_password'
   get '/404', to: 'errors#not_found'
   get '/500', to: 'errors#internal_server'
   get '/422', to: 'errors#unprocessable'

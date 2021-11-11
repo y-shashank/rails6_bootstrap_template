@@ -18,6 +18,19 @@
 
                 <div class="card o-hidden border-0 shadow-lg my-5">
                     <div class="card-body p-0">
+                        <% if notice %>
+                            <p class="alert alert-success"><%= notice %></p>
+                        <% end %>
+                        <% if alert %>
+                            <p class="alert alert-danger"><%= alert %></p>
+                        <% end %>
+                        <% if resource.errors.present? %>
+                            <div class="alert alert-danger">
+                                <% resource.errors.full_messages.each do |message| %>
+                                    <li><%= message %></li>
+                                <% end %>
+                            </div>
+                        <% end %>
                         <!-- Nested Row within Card Body -->
                         <%= yield %>
                     </div>
