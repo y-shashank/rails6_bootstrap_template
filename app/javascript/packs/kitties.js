@@ -1,3 +1,1 @@
-document.addEventListener("turbolinks:load", () => {
-    $('.dataTable').DataTable();
-});
+$('.dataTable').DataTable();

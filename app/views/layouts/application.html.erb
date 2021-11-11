@@ -2,21 +2,9 @@
 <html lang="en">
 
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+    <%= render partial: 'layouts/partials/common_head_tag', locals: {} %>
 
-    <title>SB Admin 2</title>
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <%#= stylesheet_link_tag 'sb-admin-2', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <title><%= yield(:title) || "SB Admin 2" %></title>
   </head>
 
   <body id="page-top">
@@ -42,16 +30,6 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
                     <%= yield %>
-                    <%#= render partial: 'layouts/partials/sample_main_content', locals: {} %>
-                    <%= render partial: 'layouts/design_samples/buttons', locals: {} %>
-                    <%= render partial: 'layouts/design_samples/cards', locals: {} %>
-                    <%= render partial: 'layouts/design_samples/charts', locals: {} %>
-                    <%= render partial: 'layouts/design_samples/tables', locals: {} %>
-                    <%= render partial: 'layouts/design_samples/utilities-animation', locals: {} %>
-                    <%= render partial: 'layouts/design_samples/utilities-border', locals: {} %>
-                    <%= render partial: 'layouts/design_samples/utilities-color', locals: {} %>
-                    <%= render partial: 'layouts/design_samples/utilities-other', locals: {} %>
-
                 </div>    
                 <!-- /.container-fluid -->
 
