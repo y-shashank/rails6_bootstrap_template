@@ -5,6 +5,12 @@
     <%= render partial: 'layouts/partials/common_head_tag', locals: {} %>
 
     <title><%= yield(:title) || "SB Admin 2" %></title>
+    <style>
+        .alert{
+            margin-bottom: 0;
+            border-radius: 0;
+        }
+    </style>
 </head>
 
 <body class="bg-gradient-primary">
